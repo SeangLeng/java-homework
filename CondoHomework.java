@@ -57,14 +57,14 @@ public class CondoHomework{
                     System.out.println("-------------------- Buying Condo -----------------------");
                     System.out.print("Enter your desired floor (1 - " + floor + "):  ");
                     desired_floor = src.nextInt();
-                    if (desired_floor < 0 || desired_floor > 4){
+                    if (desired_floor < 0 || desired_floor > floor){
                         System.out.println("You should input must be (1 - " + floor + ")");
 
                     }else {
                         System.out.print("Enter your desired Room (1 - " + room + "): ");
                         desired_room = src.nextInt();
                         if (array[desired_floor - 1][desired_room - 1] == null) {
-                            if (desired_room < 0 || desired_room > 4) {
+                            if (desired_room < 0 || desired_room > room) {
                                 System.out.println("You should input must be 1 - " + room + ")");
 
                             } else {
